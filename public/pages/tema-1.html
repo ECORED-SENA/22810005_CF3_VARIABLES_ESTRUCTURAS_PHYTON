@@ -1,0 +1,162 @@
+<div class="container" id="tema_1">
+    <div class="header-ecored">
+        <h1>1. Condicionales simples </h1>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-6"><img src="assets/images/pages/tema_1/img_1_01.svg" alt="" style="width:100%" /></div>
+            <div class="col-12">
+                <p>Cuando se evalúa una condición, existen dos respuestas posibles: verdadero (True) o falso (False). Si la condición es verdadera, el flujo del programa continúa en el bloque de instrucciones de la respuesta verdadera, de lo contrario, el programa continúa en el bloque de instrucciones de la respuesta falsa.</p>
+                <p>Una característica valiosa en la sintaxis de Python es el uso de la indentación, a diferencia de otros lenguajes como C que utilizan llaves { }. Salazar (2019) lo confirma en su libro.</p>
+                <p>La indentación consiste en dejar una sangría de cinco (5) espacios para señalar un bloque completo de instrucciones que se deben ejecutar, en caso que la sentencia condicional sea verdadera o falsa.</p>
+                <p>La indentación es un rasgo muy particular del código Python, y permite una lectura más agradable del programa y una fácil identificación de las distintas partes del programa.</p>
+                <p class="mt-5">En caso de un error de indentación, aparece el siguiente mensaje:</p>
+                <div class="jumbotron alert my-5">
+                    <p class="text-center mb-0">IndentationError: expected an indented block</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">Python usa la siguiente sintaxis:</p>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="console">
+                    <p>Si (condición):</p>
+                    <p class="cl-gray">hacer esto sólo para ‘Verdadero’</p>
+                    <p class="cl-gray">bloque de instrucciones</p>
+                    <p>de otro modo:</p>
+                    <p class="cl-gray">hacer esto solo para ‘Falso’</p>
+                    <p class="cl-gray">bloque de instrucciones</p>
+                    <p class="cl-gray">Siguiente instrucción después de la condicional</p>
+                    <p class="cl-gray mb-0">bloque de instrucciones</p>
+                </div>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12 mb-4">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3>Programas ramificados: </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>En las instrucciones secuenciales, las sentencias se ejecutan en el orden en el que aparecen, en cambio, los programas ramificados permiten ejecutar las sentencias sin importar el orden, basándose en la toma de decisiones.</p>
+                <p>Según Marzal (2014), las sentencias condicionales se aplican dentro de este tipo de programación; si una sentencia condicional ha sido ejecutada, la ejecución del programa continúa en la siguiente línea de código condicional.</p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema1_1">
+                    <h2>1.1 Uso de IF</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>La sentencia condicional <strong><i> if</i></strong> se usa para tomar una decisión. Esta sentencia realiza una operación lógica que debe dar como resultado True o False, y ejecuta el bloque de código siguiente, siempre y cuando el resultado sea verdadero.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center my-5"><img src="assets/images/pages/tema_1/img_1_1_01.svg" alt="" /></div>
+            <div class="col-12">
+                <p class="text-center">La sintaxis es la siguiente:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p>if (condición):</p>
+                    <p class="cl-gray">hacer esto sólo para ‘Verdadero’</p>
+                    <p class="cl-gray">bloque de instrucciones</p>
+                    <p class="cl-gray">Siguiente instrucción después de la condicional</p>
+                    <p class="cl-gray mb-0">bloque de instrucciones</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo:</p>
+                    <p class="cl-green"> numero= - 2</p>
+                    <p class="cl-green"> if numero < 0:</p>
+                            <p class="cl-green"> print ("El número ingresado es negativo: ", numero, " \n") </p>
+                            <p class="cl-green"> print ("El número será cambiado a cero. \n") </p>
+                            <p class="cl-green"> numero = 0</p>
+                            <p class="cl-green mb-5"> print ("El número ingresado ahora es ", numero, " \n") </p>
+                            <p>El número ingresado es negativo : -2</p>
+                            <p>El número será cambiado a cero.</p>
+                            <p class="mb-0">El número ingresado ahora es 0.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema1_1">
+                    <h2>1.1 Uso de IF</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>Una segunda forma de la sentencia condicional <strong><i>if</i></strong> es la ejecución con dos posibilidades. La condición, dependiendo si es verdadera o falsa, determina cuál de los dos bloques de instrucciones se ejecuta. El programa continúa después de la última instrucción con indentación.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center my-5"><img src="assets/images/pages/tema_1/img_1_1_02.svg" alt="" /></div>
+            <div class="col-12">
+                <p class="text-center">La sintaxis es la siguiente:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p>if (condición):</p>
+                    <p class="cl-gray">hacer esto sólo para ‘Verdadero’</p>
+                    <p class="cl-gray">bloque de instrucciones</p>
+                    <p>else:</p>
+                    <p class="cl-gray">hacer esto sólo para ‘Falso’</p>
+                    <p class="cl-gray">bloque de instrucciones</p>
+                    <p class="cl-gray">Siguiente instrucción después de la condicional</p>
+                    <p class="cl-gray mb-0">bloque de instrucciones</p>
+                </div>
+            </div>
+            <div class="col-12 mb-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo:</p>
+                    <p class="cl-green"> x=7</p>
+                    <p class="cl-green"> if x % 2 == 0:</p>
+                    <p class="cl-green"> print (x, "el número secreto es par") </p>
+                    <p class="cl-green"> else:</p>
+                    <p class="cl-green">print (x, "el número secreto es impar")</p>
+                    <p class="cl-green">print ("-------------------------")</p>
+                    <p class="cl-green mb-0"> print ("hemos terminado la verificación para este número") </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>La operación matemática (x % 2) calcula el valor del residuo de dividir un número por 2. El anterior código valida el valor del residuo, si el residuo es cero significa que se trata de un número par, de lo contrario, significa que es un número impar. </p>
+                <p>Este programa dará como resultado:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p>7 el número secreto es impar</p>
+                    <p>-------------------------</p>
+                    <p class="mb-0">hemos terminado la verificación para este número.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>El uso de else es opcional. Si no se coloca, nada sucederá cuando la condición sea ‘Falsa’.</p>
+                <p>Si por algún motivo no se quisiera ejecutar instrucción alguna en uno de los bloques, se debe usar la instrucción pass (esta orden significa que no tiene que hacer nada).</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p>Ejemplo:</p>
+                    <p class="cl-green">edad = int(input("¿Cuántos años tiene? "))</p>
+                    <p class="cl-green">if edad < 99:</p>
+                            <p class="cl-green">pass</p>
+                            <p class="cl-green">else:</p>
+                            <p class="cl-green">print("¡No creo que usted tenga esa edad!")</p>
+                            <p class="cl-green mb-5">print("Usted dice que tiene {edad} años.")</p>
+                            <p>¿Cuántos años tiene? 130</p>
+                            <p>¡No creo que usted tenga esa edad!</p>
+                            <p class="mb-0">Usted dice que tiene 130 años.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

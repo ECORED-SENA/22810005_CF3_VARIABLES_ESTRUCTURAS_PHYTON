@@ -1,0 +1,156 @@
+.container#tema_1
+
+    .header-ecored
+      h1 1. Condicionales simples  
+
+    .jumbotron.bg-white
+      .row.justify-content-center
+        .col-12.col-lg-8.mb-6
+          img(src="assets/images/pages/tema_1/img_1_01.svg", alt="", style="width:100%")
+        .col-12
+          p Cuando se evalúa una condición, existen dos respuestas posibles: verdadero (True) o falso (False). Si la condición es verdadera, el flujo del programa continúa en el bloque de instrucciones de la respuesta verdadera, de lo contrario, el programa continúa en el bloque de instrucciones de la respuesta falsa.
+
+          p Una característica valiosa en la sintaxis de Python es el uso de la indentación, a diferencia de otros lenguajes como C que utilizan llaves { }. Salazar (2019) lo confirma en su libro.
+
+          p La indentación consiste en dejar una sangría de cinco (5) espacios para señalar un bloque completo de instrucciones que se deben ejecutar, en caso que la sentencia condicional sea verdadera o falsa.
+
+          p La indentación es un rasgo muy particular del código Python, y permite una lectura más agradable del programa y una fácil identificación de las distintas partes del programa.
+
+          p.mt-5 En caso de un error de indentación, aparece el siguiente mensaje:
+
+          .jumbotron.alert.my-5
+            p.text-center.mb-0 IndentationError: expected an indented block
+
+        .col-12
+          p.mb-0 Python usa la siguiente sintaxis:
+
+        .col-12.mt-5
+          .console
+            p Si (condición):
+            p.cl-gray hacer esto sólo para ‘Verdadero’
+            p.cl-gray bloque de instrucciones
+            p de otro modo:
+            p.cl-gray hacer esto solo para ‘Falso’
+            p.cl-gray bloque de instrucciones
+            p.cl-gray Siguiente instrucción después de la condicional
+            p.cl-gray.mb-0 bloque de instrucciones
+
+        .hr-divider.my-5
+
+        .col-12.mb-4
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_duoble_chevron.svg", alt="")
+            .list__txt
+              h3 Programas ramificados: 
+
+        .col-12
+          p En las instrucciones secuenciales, las sentencias se ejecutan en el orden en el que aparecen, en cambio, los programas ramificados permiten ejecutar las sentencias sin importar el orden, basándose en la toma de decisiones.
+
+          p Según Marzal (2014), las sentencias condicionales se aplican dentro de este tipo de programación; si una sentencia condicional ha sido ejecutada, la ejecución del programa continúa en la siguiente línea de código condicional.
+
+       
+    .jumbotron.bg-white
+      .row
+        .col-12
+          .header-ecored.mt-3#tema1_1
+            h2 1.1 Uso de IF
+
+      .row.justify-content-center
+        .col-12
+          p La sentencia condicional #[strong #[i  if]] se usa para tomar una decisión. Esta sentencia realiza una operación lógica que debe dar como resultado True o False, y ejecuta el bloque de código siguiente, siempre y cuando el resultado sea verdadero.
+
+        .col-12.d-flex.justify-content-center.my-5
+          img(src="assets/images/pages/tema_1/img_1_1_01.svg", alt="") 
+
+        .col-12
+          p.text-center La sintaxis es la siguiente:
+
+        .col-12.my-5
+          .console
+            p if (condición):
+            p.cl-gray hacer esto sólo para ‘Verdadero’
+            p.cl-gray bloque de instrucciones
+            p.cl-gray Siguiente instrucción después de la condicional
+            p.cl-gray.mb-0 bloque de instrucciones
+        
+        .col-12
+          .console
+            p.cl-gray Ejemplo:
+            p.cl-green  numero= - 2
+            p.cl-green  if numero < 0:
+            p.cl-green  print ("El número ingresado es negativo: ", numero, "  \n") 
+            p.cl-green  print ("El número será cambiado a cero. \n") 
+            p.cl-green  numero = 0
+            p.cl-green.mb-5  print ("El número ingresado ahora es ", numero, " \n") 
+            p El número ingresado es negativo : -2
+            p El número será cambiado a cero.
+            p.mb-0 El número ingresado ahora es 0.
+
+    .jumbotron.bg-white
+      .row
+        .col-12
+          .header-ecored.mt-3#tema1_1
+            h2 1.1 Uso de IF
+
+      .row.justify-content-center
+        .col-12
+          p Una segunda forma de la sentencia condicional #[strong #[i if]] es la ejecución con dos posibilidades. La condición, dependiendo si es verdadera o falsa, determina cuál de los dos bloques de instrucciones se ejecuta. El programa continúa después de la última instrucción con indentación.
+
+        .col-12.d-flex.justify-content-center.my-5
+          img(src="assets/images/pages/tema_1/img_1_1_02.svg", alt="")
+
+        .col-12
+          p.text-center La sintaxis es la siguiente:
+
+        .col-12.my-5
+          .console
+            p if (condición):
+            p.cl-gray hacer esto sólo para ‘Verdadero’
+            p.cl-gray bloque de instrucciones
+            p else:
+            p.cl-gray hacer esto sólo para ‘Falso’
+            p.cl-gray bloque de instrucciones
+            p.cl-gray Siguiente instrucción después de la condicional
+            p.cl-gray.mb-0 bloque de instrucciones
+
+        .col-12.mb-5
+          .console
+            p.cl-gray Ejemplo:
+            p.cl-green  x=7
+            p.cl-green  if x % 2 == 0:
+            p.cl-green  print (x, "el número secreto es par")  
+            p.cl-green  else:
+            p.cl-green print (x, "el número secreto es impar")
+            p.cl-green print ("-------------------------")
+            p.cl-green.mb-0  print ("hemos terminado la verificación para este número")            
+
+        .col-12
+          p La operación matemática (x % 2) calcula el valor del residuo de dividir un número por 2. El anterior código valida el valor del residuo, si el residuo es cero significa que se trata de un número par, de lo contrario, significa que es un número impar. 
+          
+          p Este programa dará como resultado:
+
+        .col-12.my-5
+          .console 
+            p 7 el número secreto es impar
+            p -------------------------
+            p.mb-0 hemos terminado la verificación para este número.
+
+        .col-12
+          p El uso de else es opcional. Si no se coloca, nada sucederá cuando la condición sea ‘Falsa’.
+
+          p Si por algún motivo no se quisiera ejecutar instrucción alguna en uno de los bloques, se debe usar la instrucción pass (esta orden significa que no tiene que hacer nada).
+
+        .col-12.my-5
+          .console 
+            p Ejemplo:
+            p.cl-green edad = int(input("¿Cuántos años tiene? "))
+            p.cl-green if edad < 99:
+            p.cl-green pass
+            p.cl-green else:
+            p.cl-green print("¡No creo que usted tenga esa edad!")
+            p.cl-green.mb-5 print("Usted dice que tiene {edad} años.")
+            p ¿Cuántos años tiene? 130
+            p ¡No creo que usted tenga esa edad!
+            p.mb-0 Usted dice que tiene 130 años.

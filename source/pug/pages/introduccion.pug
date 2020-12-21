@@ -1,0 +1,115 @@
+.container#page-introduccion
+
+    .header-ecored
+        h1 Introducción
+
+
+    .jumbotron.bg-white 
+      .row.justify-content-center
+        .col-12
+          p Las sentencias condicionales hacen que la programación tenga gran importancia. Esta es la capacidad de comparar el valor de una variable contra otra variable o una constante y ejecutar un bloque de instrucciones si se cumple una condición o de otra si no se cumple.
+
+          p.mb-5 En este componente formativo se explicará el uso de las sentencias condicionales simples y las sentencias condicionales anidadas, utilizando expresiones booleanas simples y compuestas.
+
+          .jumbotron
+            p #[strong Existen operadores booleanos (también llamados lógicos) y operadores de comparación.]
+            p.mb-0 En Python, los tres operadores booleanos son: #[strong “and” ( y ), “or “( o ), “not”( no )].
+
+        .col-12.col-lg-9
+          img(src="assets/images/pages/intro/img_intro_01.svg", alt="", style="width:100%") 
+          p.text-center #[i Find More Candidates with Boolean Search, 2015]  
+
+        .col-12.mt-5
+          p Para Buttu(2016) una sentencia u operación lógica puede ser evaluada Verdadera o Falsa de la siguiente manera:
+
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p El operador and genera como resultado el valor True, solamente cuando son ciertos sus dos operandos. 
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p El operador or da como resultado el valor True, si cualquiera de sus operandos es True, y False sólo cuando ambos operandos son False.
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p.mb-0 El operador not es unario, y proporciona el valor True si su operando es False y viceversa.
+
+        .col-12.my-6
+          img(src="assets/images/pages/intro/img_intro_02.svg", alt="", style="width:100%") 
+
+        .col-12
+          p Salazar(2019) menciona que es importante conocer las prioridades existentes al usar los operadores lógicos: en primer lugar se tiene el operador de negación #[strong (not)], luego el de conjunción #[strong #[i (and)]] y por último el de disyunción #[strong #[i (or)]].
+
+          p En general, los elementos nulos o vacíos se consideran False y el resto se consideran #[strong #[i True]].
+
+          p.mb-0 Si se desea verificar si un elemento es #[strong #[i True]] o #[strong #[i False]], se puede convertir a su valor booleano mediante la función #[strong bool()].
+
+        .col-12.my-6
+          .console
+            p.cl-green >>> bool(0)
+            p False
+            p.cl-green  >>> bool(0.0)
+            p False
+            p.cl-green  >>> bool("")
+            p False
+            p.cl-green  >>> bool(5)
+            p True
+            p.cl-green  >>> bool(3.2)
+            p True
+            p.cl-green  >>> bool("SENA")
+            p True
+            p.cl-green.mb-0  >>>
+
+        .col-12
+          p.text-center.mb-0 En Python se usan los siguientes operadores de comparación:
+        
+        .col-12.col-lg-10.my-5
+          img(src="assets/images/pages/intro/img_intro_03.svg", alt="", style="width:100%") 
+
+        .col-12.my-5
+          .console
+            p Ejemplo:
+            p.cl-green >>> 2==3
+            p False
+            p.cl-green >>> 2>1
+            p True
+            p.cl-gren >>> 2>8
+            p False
+            p.cl-gren >>> 3>=4
+            p False
+            p.cl-gren >>> 8>=5
+            p True
+            p.cl-gren >>> 1<=2
+            p True
+            p.cl-gren >>> 5!=6
+            p True
+
+        .col-12
+          p Una sentencia condicional consta básicamente de los siguientes componentes:
+
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p Una prueba que evalúa  verdadero o falso.
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p Un bloque de código que se ejecuta si la prueba es verdadera.
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p Un bloque opcional de código si la prueba es falsa.
+

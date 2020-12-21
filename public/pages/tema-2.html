@@ -1,0 +1,163 @@
+<div class="container" id="tema_2">
+    <div class="header-ecored">
+        <h1>2. Condicionales anidadas </h1>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 my-5"><img src="assets/images/pages/tema_2/img_2_01.svg" alt="" style="width:100%" /></div>
+            <div class="col-12">
+                <p class="mb-0">En algunas ocasiones se requiere que después de una condicional se incluya una segunda condicional o quizás una tercera condicional. A continuación se detallará la sintaxis para codificar varias condicionales anidadas en un solo bloque. </p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema2_1">
+                    <h2>2.1 Concepto</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>Cervantes (2017) afirma que una sentencia condicional es anidada, si se observa que el bloque de código verdadero o el bloque de código falso, contiene otra sentencia condicional.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center my-5"><img src="assets/images/pages/tema_2/img_2_1_01.svg" alt="" /></div>
+            <div class="col-12">
+                <div class="console mb-5">
+                    <p class="cl-gray">Ejemplo:</p>
+                    <p class="cl-green">curso1="Requerimientos"</p>
+                    <p class="cl-green mb-5">curso2="Algoritmos"</p>
+                    <p class="cl-green">print("El curso1 es: ", curso1)</p>
+                    <p class="cl-green">print("El curso2 es: ", curso2)</p>
+                    <p class="cl-green">if curso1 == "Requerimientos":</p>
+                    <p class="cl-green indent_01">if curso2 == "Algoritmos":</p>
+                    <p class="cl-green indent_02">print ("Usted estudia Programación de Software")</p>
+                    <p class="cl-green indent_01">else:</p>
+                    <p class="cl-green indent_02">print ("Usted estudia otro programa diferente a Programación de Software")</p>
+                    <p class="cl-green">print ("***** Final del Análisis del Programa de Formación SENA *****")</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>La ejecución de este programa sería la siguiente:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p>El curso 1 es: Requerimientos</p>
+                    <p>El curso 2 es: Algoritmos</p>
+                    <p>Usted estudia Programación de Software</p>
+                    <p class="mb-0">***** Final del Análisis del Programa de Formación SENA *****</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="jumbotron mb-0">
+                    <p>Aquí se observa una sentencia condicional anidada. La primera instrucción <strong><i>if</i></strong> contiene otra sentencia <strong><i>if</i></strong>. Es valioso aplicar la indentación interna del código para que este sea legible y funcione correctamente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema2_1">
+                    <h2>2.1 Uso de ELIF</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>Existen también las llamadas <strong>Condicionales encadenadas</strong>. A veces hay más de dos posibilidades y necesitamos más de dos ramificaciones. Una forma de expresarlo es con una condicional encadenada, donde solo se puede cumplir una de las ramificaciones o ninguna de ellas.</p>
+                <p class="mb-0">La sentencia <strong>elif</strong> es una abreviatura de <strong><i>“else if”</i></strong>. No existe un límite definido al uso de sentencias <strong>elif</strong>, pero sólo se permite una sentencia else (que es opcional) y debe ser la última rama de la sentencia:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-green">if (condición1):</p>
+                    <p class="cl-green indent_01">bloque de instrucciones para ‘Verdadero’ a la condición1</p>
+                    <p class="cl-green">elif condición2:</p>
+                    <p class="cl-green indent_01">bloque de instrucciones para ‘Verdadero’ a la condición2</p>
+                    <p class="cl-green">elif condición3:</p>
+                    <p class="cl-green indent_01">bloque de instrucciones para ‘Verdadero’ a la condición3</p>
+                    <p class="cl-green">else:</p>
+                    <p class="cl-green indent_01">hacer esto solo para ‘Falso’ a todas las condiciones anteriores</p>
+                    <p class="cl-green indent_01">bloque de instrucciones</p>
+                    <p class="cl-green">Siguiente instrucción después de la condicional</p>
+                    <p class="cl-green mb-0">bloque de instrucciones</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">Aquí se presenta una aplicación de <strong>elif</strong>:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo:</p>
+                    <p class="cl-green">voto= int(input(" \n digite su número de candidato (1=X 2=Y 3=Z) "))</p>
+                    <p class="cl-green">if voto==1 :</p>
+                    <p class="cl-green indent_01">print (" \n su voto es para el candidato X " )</p>
+                    <p class="cl-green">elif voto==2 :</p>
+                    <p class="cl-green indent_01">print (" \n su voto es para el candidato Y " )</p>
+                    <p class="cl-green">elif voto==3 :</p>
+                    <p class="cl-green indent_01">print (" \n su voto es para el candidato Z " )</p>
+                    <p class="cl-green">else:</p>
+                    <p class="cl-green indent_01">print ("su voto es inválido.")</p>
+                    <p class="cl-green">print (" \n Ya ha depositado su voto, puede solicitar su documento y salir. Gracias")</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">El resultado del anterior programa es:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p>digite su número de candidato (1=X 2=Y 3=Z)</p>
+                    <p>su voto es para el candidato Z</p>
+                    <p>Ya ha depositado su voto, puede solicitar su documento y salir. Gracias.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">Las condiciones se comprueban en orden. Si la primera es falsa, se comprueba la siguiente, y así se sigue con las demás. Si una de ellas es cierta, se ejecuta la rama correspondiente y termina la sentencia. Incluso, si es cierta más de una condición, sólo se ejecuta la primera rama verdadera. </p>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12 mb-4">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3>Expresiones booleanas compuestas: </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>Fernández (2017) menciona que es posible tener más de una expresión booleana en la misma sentencia condicional. A esto se le llaman expresiones booleanas compuestas.</p>
+                <p>Un ejemplo: hallar el número más pequeño entre tres números enteros. </p>
+                <p>Se observa que el primer test es una expresión booleana compuesta. Todos los operandos tienen que ser ciertos para que la siguiente instrucción se ejecute.</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo:</p>
+                    <p class="cl-green">a= int(input("Digita el primer numero entero "))</p>
+                    <p class="cl-green">b= int(input("Digita el segundo numero entero "))</p>
+                    <p class="cl-green">c= int(input("Digita el tercer numero entero "))</p>
+                    <p class="cl-green">if a < b and a < c:</p>
+                            <p class="cl-green indent_01">print ("El menor numero entero es ", a)</p>
+                            <p class="cl-green">elif b < c:</p>
+                                    <p class="cl-green indent_01">print ("El menor numero entero es ", b)</p>
+                                    <p class="cl-green">else:</p>
+                                    <p class="cl-green indent_01">print ("El menor numero entero es ", c) </p>
+                                    <p class="cl-green">print (" ******* END *************")</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">La ejecución del programa da como resultado:</p>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="console">
+                    <p>Digita el primer número entero 7</p>
+                    <p>Digita el segundo número entero 3</p>
+                    <p>Digital el tercer número entero 9</p>
+                    <p>El menor número entero es 3</p>
+                    <p class="mb-0">******* END *************</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

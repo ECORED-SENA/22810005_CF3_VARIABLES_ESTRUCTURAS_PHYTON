@@ -1,0 +1,379 @@
+.container#tema_3
+
+    .header-ecored
+        h1 3. Instrucciones secuenciales con Python  
+
+    .jumbotron.bg-white
+      .row.justify-content-center
+        .col-12.col-lg-9.mb-5
+          img(src="assets/images/pages/tema_3/img_3_1_01.svg", alt="", style="width:100%")
+        .col-12
+          p Una vez leídos los datos de entrada, se debe proceder a realizar los cálculos necesarios para obtener la información requerida por el usuario. Estas instrucciones se deben digitar una tras otra, verificando que el procedimiento lógico sea correcto y los operadores empleados sean los adecuados. Es indispensable cumplir con la sintaxis aceptada por Python.
+
+          p En la codificación de las instrucciones se pueden utilizar comentarios, constantes, variables, asignaciones, operadores aritméticos y funciones.
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema3_1
+            h2 3.1 Comentarios en Python
+
+      .row
+        .col-12
+          p Ortega (2018) define un comentario en Python como una línea de texto no ejecutable, es decir, no es una línea de código.
+          
+          p.mb-5 Es una buena práctica en programación documentar el código para mayor claridad. Se pueden hacer comentarios en Python para ilustrar acerca de lo que hace el programa.  Se pueden incluir tantos comentarios como se requieran. 
+
+          p Hay dos formas para hacer comentarios:
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p Digitando el símbolo #[strong #] al comienzo del comentario o dentro de la línea de código. 
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p Digitando triple comilla #[strong (“)] al principio y al final del comentario, cuando este ocupa varias líneas.
+
+          .col-12.mt-5
+            .console
+              p.cl-gray Ejemplo:
+              p.cl-gray  # SENA: Colombia
+              p.cl-gray  # Regional: Santander 
+              p.cl-green a=30 #[span.inline_comment # a representa el número de aprendices por Ficha]
+              p.cl-green b=9 #[span.inline_comment # b representa el número de Fichas de programación de software]        
+              p.cl-gray.mb-0 """Estos son datos de los 8 centros de formación ubicados en el departamento de Santander."""
+
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema3_2
+            h2 3.2 Instrucciones de asignación
+
+      .row
+        .col-12 
+          p.mb-5 Una variable es una forma de identificar un dato que se encuentra almacenado en la memoria del computador.  El valor de la variable puede ir cambiando a medida que se ejecutan las instrucciones del programa.
+
+          p Nombres de variables válidos en Python:
+
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p Secuencias de letras y dígitos.
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p El nombre de la variable debe iniciar con una letra.
+          .list.mb-5
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p.mb-0 Se puede usar el guion bajo (_).
+
+          p A las variables se les puede asignar un valor de cualquier tipo (int, float, str, booleano, lista) o una expresión aritmética.
+
+          p En la siguiente tabla se verán varios operadores aritméticos que pueden ser utilizados en una asignación:
+
+        .col-12.mt-5
+          img(src="assets/images/pages/tema_3/tabla_01.svg", alt="", style="width:100%")
+
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema3_3
+            h2 3.3 Inicialización de variables
+
+      .row
+        .col-12
+          p Algunas variables requieren ser inicializadas con un valor, usualmente ese valor es cero.
+
+          p Cuando asignamos un valor a una variable por primera vez, se dice que se define e inicializa la variable. En un programa Python se pueden definir las variables en cualquier lugar del programa. Sin embargo, es una buena práctica definir las variables al principio del programa.
+          
+          p.mb-4 Para asignar un valor a una variable se utiliza el operador de asignación =.
+
+          .jumbotron.mb-0 
+            p.mb-0 No es necesario declarar inicialmente una variable con un tipo de datos; al asignar un valor a una variable, se declara e inicializa la variable con ese valor.
+
+        .col-12.my-5
+          .console
+            p.cl-gray  # Ejemplo:   
+            p.cl-green b= 100 #[span.inline_comment #b se inicializa con un valor entero]
+            p.cl-green  c= b**3 #[span.inline_comment #c se inicializa con una expresión]     
+            p.cl-green.mb-0 print(c)  
+
+        .col-12
+          p.mb-0 Si intentamos usar una variable que no ha sido inicializada, el intérprete mostrará un error:
+
+        .col-12.mb-5
+          .console
+            p.cl-gray  # Ejemplo:
+            p.cl-green >>> print(z)
+            p Traceback (most recent call last): 
+            p File &quot;#{"<input>"}&quot;, line 1, in #{"<module>"}        
+            p.mb-0 NameError: name 'z' is not defined    
+                                   
+
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema3_4
+            h2 3.4 Uso de constantes y variables
+
+        .col-12
+          p.mb-0 Una constante es un campo de memoria donde su valor o contenido no cambia: la única diferencia es que las constantes van en mayúscula, por ejemplo, CONSTANTE1. Desde el punto de vista funcional no existe ninguna diferencia entre las constantes y variables en Python. Es recomendable, como buena práctica, que no se modifique el valor de una constante posteriormente. 
+
+        .col-12.my-5
+          .console
+            p.cl-gray # Ejemplo:
+            p.cl-green IVA = 0.19
+            p.cl-green precioinicial = 3000
+            p.cl-green preciofinal = precioinicial * (1.0+IVA)
+            p.cl-green print(preciofinal)
+            p.mb-0 3570
+
+        .col-12
+          p Una #[strong variable] es una unidad de datos que puede cambiar de valor. El programador puede decidir el nombre de las variables, se recomienda que sea claro y conciso, y también puede escribir funciones que trabajen con los valores contenidos en ellas.
+          p Para modificar el valor de una variable, simplemente se le asigna un nuevo valor en el programa, este puede ser un literal, una expresión, una llamada a una función o una combinación de todos ellos.
+          p.mb-0 Un literal es un dato puro, que puede ser un número, una cadena de caracteres o un booleano.
+
+        .col-12.my-5
+          .console
+            p.cl-gray # Ejemplo:
+            p.cl-green a= 10000 #[span.inline_comment # a se inicializa con un número entero] 
+            p.cl-green b= a * 2/100 #[span.inline_comment # b se inicializa con una expresión]			
+            o.cl-green c= “JUAN CARLOS” #[span.inline_comment # c se inicializa con una cadena]
+            p.cl-green print( c, “debe la suma de $”, a+b)
+            p.mb-0 JUAN CARLOS debe la suma de $ 10200
+
+        .col-12
+          p.mb-0 Es posible en Python asignar un mismo valor a múltiples variables a la vez. Se pueden definir varias variables con un mismo dato, así:
+
+        .col-12.my-5
+          .console
+            p a = b = c = 10 #[span.inline_comment # Inicializan a, b y c con el valor entero 10] 
+            p.cl-green >>> print(a)
+            p 10
+            p.cl-green >>> print(b)
+            p 10
+            p.cl-green >>> print(c)
+            p.mb-0 10
+
+        .col-12
+          p.mb-0 También está permitido, en una sola instrucción, inicializar varias variables con un valor diferente para cada una:
+
+        .col-12.my-5
+          .console
+            p.cl-green >>> a, b, c = 100, 200, 300 
+            p.cl-green >>> print(a)
+            p 100
+            p.cl-green >>> print(b)
+            p 200
+            p.cl-green >>> print(c)
+            p.mb-0 300
+
+        .col-12
+          p.mb-4 Existen unas variables especiales denominadas acumuladores y otras denominadas contadores.
+
+          .jumbotron
+            p Un #[strong acumulador] es una variable a la que le vamos sumando un determinado valor.
+            p.my-4 #[strong Ejemplo: suma=suma+edad] 
+            p.mb-0 La variable suma, acumula las edades.
+
+          .jumbotron.mb-0
+            p Un #[strong contador] es una variable a la cual le vamos sumando/restando un valor constante. 
+            p.my-4 #[strong Ejemplo: total=total+1] 
+            p.mb-0 La variable total se incrementa en 1 cada vez que se ejecuta esta instrucción.
+  
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema3_5
+            h2 3.5 Funciones predefinidas de Python
+
+      .row
+        .col-12 
+          p Existe una diversidad de funciones predefinidas en Python o funciones internas. Buttu (2016) menciona algunas de las funciones más utilizadas y conocidas:
+
+        .col-12.my-5
+          img(src="assets/images/pages/tema_3/tabla_02.svg", alt="", style="width:100%")
+        .col-12.my-5
+          img(src="assets/images/pages/tema_3/tabla_03.svg", alt="", style="width:100%")
+        .col-12.my-5
+          img(src="assets/images/pages/tema_3/tabla_04.svg", alt="", style="width:100%")
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema3_6
+            h2 3.6 Librerías de fecha, random y matemáticas
+
+      .row
+        .col-12.mb-5
+          p En Python se pueden utilizar funciones predefinidas para manejar fechas, generar números aleatorios y aplicar funciones matemáticas, importando algunas librerías, las cuales, según Caballero (2019), se pueden aplicar en Big Data.
+
+        .col-12 
+          .list
+            .list__item
+              .list__item__bulletNumber
+                span A
+            .list__txt
+              h3 Librerías de fecha
+              p Si se necesita usar fechas en un programa, es necesario importar las librerías Python: #[strong #[i datetime y date]]
+              .row
+                .col-12 
+                  .console.my-5
+                    p.cl-green from datetime import date
+                    p.cl-green from datetime import datetime
+                    p.cl-green hoy = date.today() #[span.inline_comment #fecha actual]
+                    p.cl-green print(“Hoy es el dia: “, hoy)
+                    p Hoy es el día:  2020-10-28
+                    p.cl-green fecha = datetime.now() #[span.inline_comment #Fecha actual con hora completa]
+                    p.cl-green print("La fecha completa de hoy es: ",fecha)
+                    p.mb-0 La fecha de hoy es:  2020-10-28 17:42:17.961801
+
+        .hr-divider.my-5
+
+        .col-12
+          .list
+            .list__item
+              .list__item__bulletNumber
+                span B
+            .list__txt
+              h3 Librerías random
+              p Si se requiere generar números aleatorios (randómicos), es necesario cargar la librería random.
+              p Aquí se presentan unos ejemplos de las posibles funciones con números aleatorios:
+                 
+              .console.my-5
+                p.cl-green import random            
+                p.cl-green a= random.randint(10,100) #[span.inline_comment #genera un número entero aleatorio entre 10 y 100]
+                p.cl-green print (a)
+                p.mb-5 99
+                p.cl-green b= random.randrange(0,100,5) #[span.inline_comment genera un número entero aleatorio entre 0 y 100 incrementos de 5]
+                p.cl-green print (b)
+                p.mb-5 25
+                p.cl-green c= random.random() #[span.inline_comment #genera un número float aleatorio entre 0.0 y 1.0]
+                p.cl-green print (c)
+                p.mb-5 0.998394986213598
+                p.cl-green d= random.uniform(100, 200) #[span.inline_comment #genera un número float aleatorio entre 100.0 y 200.0 inclusive.]
+                p.cl-green print (d)
+                p.mb-5 156.5039706179512       
+        
+              p.mb-0 La función #[strong #[i choice]] permite seleccionar al azar un dato desde un conjunto.
+             
+                .console.my-5
+                  p.cl-green Import random
+                  p.cl-green amigos = ['Luis', 'Mauricio', 'Patricia', 'Carlos']
+                  p.cl-green ganador= random.choice(amigos)
+                  p.cl-green print(“El ganador fue: “,ganador)
+                  p.mb-0 El ganador fue: Patricia
+        
+              p.mb-0 La función #[strong #[i shuffle]] modifica el orden de los elementos de una lista.
+             
+                .console.my-5
+                  p.cl-green Import random
+                  p.cl-green naipes = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12]
+                  p.cl-green random.shuffle(naipes) #[span.inline_comment #los naipes se barajaron al azar]
+                  p.cl-green print(naipes)
+                  p.mb-0 [3, 6, 2, 12, 5, 1, 4, 11, 10, 7]
+        
+              p.mb-0 La función #[strong #[i sample.]] Esta función extrae una cantidad de números aleatorios de un conjunto. 
+                 
+                .console.my-5
+                  p.cl-green Import random
+                  p.cl-green naipes = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12]
+                  p.cl-green random.sample(naipes, 3) #[span.inline_comment #se tomaron 3 cartas del total de naipes]
+                  p.cl-green print(naipes)
+                  p.mb-0 [4, 11, 3]
+
+        .hr-divider.my-5
+
+        .col-12
+          .list
+            .list__item
+              .list__item__bulletNumber
+                span C
+            .list__txt
+              h3 Librerías matemáticas
+              p Cervantes (2017) hace referencia a unas funciones matemáticas que vienen predefinidas por Python y otras que requieren ser importadas de la librería #[strong #[i math]].
+              p La función #[strong #[i trunc()]]  elimina los decimales de un número #[strong #[i float]].
+
+              .console.my-5
+                p.cl-green import math
+                p.cl-green a=123.56
+                p.cl-green b=math.trunc(a)
+                p.cl-green print(“El valor truncado es: “,b)
+                p.mb-0 123
+
+       
+              p.mb-0 La función #[strong #[i fabs()]] calcula el valor absoluto de un número float, eliminando el signo.
+                 
+              .console.my-5
+                p.cl-green import math
+                p.cl-green a= - 200.45
+                p.cl-green b=math.fabs(a)
+                p.cl-green print(“El valor absoluto es: “,b)
+                p.mb-0 200.45
+        
+              p.mb-0 La función #[strong #[i factorial()]] calcula el número de combinaciones posibles de una serie de objetos. El factorial se expresa como n!. ejemplo:   0! == 1.  Es importante aclarar que la función factorial() solo se utiliza con números enteros.
+                 
+              .console.my-5
+                p.cl-green import math
+                p.cl-green a= 6
+                p.cl-green b=math.factorial(a)
+                p.cl-green print(“El valor factorial de “,a, “ es: “,b) #[span.inline_comment # 6! es igual a  6x5x4x3x2x1] 
+                p.mb-0 720
+
+              p.mb-0 La función #[strong #[i fmod()]] calcula el residuo de una división entre dos números float.
+
+              .console.my-5
+                p.cl-green import math
+                p.cl-green c= math.fmod(16,5)
+                p.cl-green print(“el residuo de dividir 16 entre 5 es ”,c)   
+                p.mb-0 el residuo de dividir 16 entre 5  es  1.0
+              
+              p.mb-0 La función #[strong #[i sqrt()]] calcula la raíz cuadrada de un número entero.
+
+              .console.my-5
+                p.cl-green import math
+                p.cl-green a=3
+                p.cl-green c= math.sqrt(a)   
+                p.cl-green print(“la raíz cuadrada de 3 es: ”,c)
+                p.mb-0 la raíz cuadrada de 3 es:  1.7320508075688772
+
+              p Las funciones trigonométricas seno, coseno y tangente se realizan usando #[strong #[i sin(), cos() y tan()]]. 
+
+              p.mb-0  Las funciones trigonométricas en la librería math toman los valores de los ángulos expresados como radianes. Por esta razón, debe realizarse la conversión de grados a radianes con la función #[strong #[i radians]].
+
+              .console.my-5
+                p.cl-green import math
+                p.cl-green angulo= 60
+                p.cl-green radianes = math.radians(angulo)   
+                p.cl-green print(“los radianes son:”,radianes)
+                p.mb-5 los radianes son: 1.0471975511965976
+                p.cl-green seno= math.sin(radianes)
+                p.cl-green coseno= math.cos(radianes)
+                p.cl-green.mb-5  tangente=math.tan(radianes)
+                p.cl-green print(“el seno es:”,seno)
+                p el seno es: 0.8660254037844386
+                p.cl-green print(“el coseno es:”,coseno)
+                p el coseno es: 0.5000000000000001
+                p.cl-green print(“la tangente es:”,tangente)
+                p la tangente es: 1.7320508075688767
+
+              .jumbotron.mb-0
+                p.mb-0 Existen muchas funciones matemáticas adicionales tales como exponenciales, hiperbólicas, trigonométricas inversas, distancia entre coordenadas, entre otras.
+
+
+
+
